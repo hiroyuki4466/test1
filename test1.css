@@ -1,3 +1,4 @@
+/*ヘッダー*/
 .Header {
   width: 100%;
 }
@@ -6,14 +7,83 @@
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  margin: 0 40px;
+  margin: 0 15px;
   position: relative;
 }
 
+@media screen and (min-width: 768px){
 .header_title {
-  width: 200px;
-  height: 30px;
-  margin: 15px 0;
+  margin-top: 15px;
+  width: 180px;
+  height: 25px
+}
+}
+
+@media screen and (max-width: 767px) {
+.header_title {
+  width: 120px;
+  height: 20px;
+  margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1080px){
+.menu-list_hamburger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin: 0 0 0 auto;
+  width: 30px;
+  height: 21px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+.hamburger-line1 {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transform: translate(0, -50%);
+  border-radius: 10px;
+  transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}
+}
+
+@media screen and (max-width: 1080px) {
+.hamburger-line2 {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transform: translate(0, -50%);
+  border-radius: 10px;
+  transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}
+}
+
+@media screen and (max-width: 1080px) {
+.hamburger-line3 {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transform: translate(0, -50%);
+  border-radius: 10px;
+  transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}
+}
+
+@media screen and (max-width: 1080px) {
+.menu {
+  display: none;
+}
 }
 
 .menu-list {
@@ -22,13 +92,14 @@
   justify-content: space-between;
   margin-top: 15px;
   align-items: center;
+  padding: 0 10px;
 }
 
 .menu {
   text-decoration: none;
   text-align: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 12px;
   color: black;
   font-weight: bold;
   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
@@ -41,6 +112,12 @@
 .menu span {
   font-weight: normal;
   font-size: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+.counseling {
+  display: none;
+}
 }
 
 .counseling  {
@@ -59,26 +136,94 @@
   background-color: #FFFF99;
 }
 
-.Body {
+/*トップページ*/
+@media screen and (min-width: 768px){
+.background-img-pc {
+  background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+}
+
+@media screen and (max-width: 767px){
+.background-img-sp {
   background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 700px 80%;
+  background-position: relative;
+  background-size: contain;
+}
+}
+
+@media screen and (min-width: 768px){
+.main-theme {
+  display: block;
+  position: relative;
+  padding-left: 70px;
+}
+}
+
+@media screen and (max-width: 767px){
+.main-theme {
+  display: block;
+  position: relative;
+  top: 200px;
+}
+}
+
+@media screen and (max-width: 767px){
+.main-title {
+  font-size: 5px;
+  text-align: center;
+} 
 }
 
 .main-title {
   font-size: 35px;
-  text-align: center;
-  margin-right: 550px;
 }
 
-.circle-image {
-  margin-left: 180px;
+@media screen and (max-width: 767px){
+.main-title {
+  font-size: 25px;
+  text-align: center;
+} 
+}
+
+@media screen and (max-width: 767px){
+.circle-images {
+  display: flex;
+  justify-content: center;
+}
+}
+
+@media screen and (max-width: 767px){
+.circle-image1 {
+  width: 25%;
+}
+}
+
+@media screen and (max-width: 767px){
+.circle-image3 {
+  width: 25%;
+}
+}
+
+@media screen and (max-width: 767px){
+.circle-image2 {
+  width: 35%;
+}
 }
 
 .buttons {
   margin-top: 50px;
-  margin-left: 150px;
+}
+
+@media screen and (max-width: 767px){
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 }
 
 .counseling2 {
@@ -89,6 +234,20 @@
   padding: 20px 80px;
   text-decoration: none;
   border-radius: 40px;
+}
+
+@media screen and (max-width: 767px){
+.counseling2 {
+  width: 80%;
+  font-size: 15px;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 }
 
 .counseling2:hover {
@@ -106,26 +265,81 @@
   border-radius: 40px;
 }
 
+@media screen and (max-width: 767px){
+.document {
+  width: 80%;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 40px;
+  text-align: center;
+}
+}
+
 .document:hover {
   color: #888888;
 }
 
+@media screen and (min-width: 768px){
 .attention {
   font-size: 5px;
   color: #BBBBBB;
-  margin: 50px 0 0 100px;
+  margin: 30px 0;
+}
 }
 
+@media screen and (max-width: 767px){
+.attention {
+  font-size: 5px;
+  color: #BBBBBB;
+  margin: 15px 0;
+}
+}
+
+@media screen and (min-width: 768px){
 .terms {
   color: #BBBBBB;
   text-decoration: none;
 }
+}
 
+@media screen and (max-width: 767px){
+.terms {
+  color: #BBBBBB;
+  text-decoration: none;
+}
+}
+
+/*POTEPANpotepanとは*/
+@media screen and (min-width: 1024px) {
 .about-belt {
   background-color: orange;
-  padding: 40px 200px 40px 150px;
   color: white;
-  margin-top: 40px;
+  padding: 30px 120px;
+}
+}
+
+@media screen and (max-width: 1023px) {
+.about-belt {
+  background-color: orange;
+  color: white;
+  padding: 30px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.about-belt {
+  position: relative;
+  top: 200px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.about {
+    flex-direction: column;
+}
 }
 
 .about {
@@ -143,7 +357,6 @@
 
 .about-title h2 {
   color: white;
-  text-align: left;
 }
 
 .about-title h2 span:first-child {
@@ -154,10 +367,23 @@
   font-size: 35px;
 }
 
+@media screen and (max-width: 767px) {
+.about-title h2 span:first-child {
+  font-size: 25px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.about-title h2 span:last-child {
+  font-size: 15px;
+  text-align: center;
+}
+}
+
 .about-title p {
   font-size: 15px;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: white;
   text-align: left;
   display: inline-block;
